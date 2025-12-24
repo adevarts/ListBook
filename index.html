@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Course Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MY LIBRARY</div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari course atau mentor...">
+        </div>
+    </nav>
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterCourses('all', this)">All Courses</button>
+        <button class="filter-btn" onclick="filterCourses('Unreal Engine', this)">Unreal Engine</button>
+        <button class="filter-btn" onclick="filterCourses('Blender', this)">Blender</button>
+        <button class="filter-btn" onclick="filterCourses('Substance Painter', this)">Substance</button>
+        <button class="filter-btn" onclick="filterCourses('Pipeline', this)">Pipeline</button>
+    </div>
+
+    <main class="container" id="courseContainer"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
